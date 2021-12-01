@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title> Let's Chat </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="kwitter.css">
+    <script href="kwitterRoom.js"></script>
+
+</head>
+
+<body>
+
+    
+    
+        <div class="container"> 
+            <button class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout();"> Logout </button>
+        
+    <center>
+
+    
+        <h1  class="header">	
+			Kwitter	
+			<sup>
+				<img src="icons8-alert-64.png">
+			</sup>
+		</h1>
+
+        <div class="main">
+            <h2 id="username" class="color-white"></h2> 
+        </div>
+
+        <div class="form-group input_div_room_page">
+			<label> Room Name</label>
+			<input type="text" id="room_name" class="form-control" placeholder="Room Name">
+		</div>
+		
+		<button onclick="addRoom();" class="btn btn-success"> Continue </button>
+
+		<h3 class="color_white"> Popular Rooms </h3>
+
+		<div id="output"></div>
+
+        </div>
+    
+    </center>
+
+</body>
+
+</html>
